@@ -1,0 +1,7 @@
+# Delete this with app/ if the project has no UI.
+resources:
+  apps:
+    ui:
+      name: ${bundle.name}-ui
+      source_code_path: ../app
+      description: FastAPI serving a React frontend

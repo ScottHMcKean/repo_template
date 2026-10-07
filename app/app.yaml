@@ -1,0 +1,8 @@
+# Databricks Apps runtime config. The port comes from the platform.
+command:
+  - uvicorn
+  - app.backend.main:app
+  - --host
+  - 0.0.0.0
+  - --port
+  - $DATABRICKS_APP_PORT
